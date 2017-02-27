@@ -1,92 +1,122 @@
-
+html,body,div,h1,h2,h3,h4,h5,h6,p,ol,ul,li,section{
+	margin:0;padding:0;border:0;outline:0
+}
+ol,ul{
+	list-style:none
+}
+a {
+	display:block;
+    text-decoration: none;
+    color: #333;
+}
+li{list-style-type:none;}
 html{
-    height: 100%;  
-    width: 100%;  
-    font-size: 20px  !important;  
-    outline: 0;  
-    -webkit-text-size-adjust:none; 
-    font-family: "Source Han Sans",Helvetica,Tahoma,Arial,"Hiragino Sans GB","Microsoft YaHei",SimSun,Heiti,sans-serif; 
+    height : 100%;  
+    width : 100%;  
+    outline : 0;  
+    -webkit-text-size-adjust : none; 
+    font-family : "Source Han Sans",Helvetica,Tahoma,Arial,"Hiragino Sans GB","Microsoft YaHei",SimSun,Heiti,sans-serif; 
+}
+body{
+	font-family:sans-serif,Helvetica,Arial,'Lucida Grande',Verdana;word-wrap:break-word;
+	line-height:1.2;
+}
+.line{
+	height : 40px;
+	width : 100%;
+    background : #f5f5f5;
 }
 
-.line{
-	height:40px;
-	width:100%;
-    background:#f5f5f5;
-}
+/* index页面 */
 .card-wrapper{
-    padding:50px;
+    padding : 50px;
 }
 .card{
-	border-radius: 15px;
-	width:auto;
-	height:420px;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding:40px;
-    background-image:url(../img/card-bg.jpg);
-    overflow: hidden;
+	border-radius : 15px;
+	width : auto;
+	height : 400px;
+    display : -webkit-flex;
+    display : flex;
+    flex-direction : column;
+    justify-content : space-between;
+    padding : 50px;
+    background-image : url(../img/card-bg.jpg);
+    overflow : hidden;
 }
 .card-top{
-    display: -webkit-flex;
-    display: flex;
-    justify-content: space-between;
+    display : -webkit-flex;
+    display : flex;
+    justify-content : space-between;
 }
 .card-name{
-	background-image:url(../img/LOGO.png);
-	width: 250px;
-    height: 100px;
-    background-size:100% 100%
+	background-image : url(../img/LOGO.png);
+	width : 300px;
+    height : 100px;
+    background-size : 100% 100%
 }
 .card-title{
-	background-image:url(../img/crown.png);
-	background-size: 100% 100%;
-	width:80px;
-	height:80px;
+	background-image : url(../img/crown.png);
+	background-size : 100% 100%;
+	width : 80px;
+	height : 80px;
 	
 }
+.VIP-ID{
+	font-size : 30px;
+}
 .block-wrapper{
-	padding:40px 0;
-	display: -webkit-flex;
-    display: flex;
-    justify-content:space-around;
-    text-align:center;
+	padding : 40px 0;
+	display : -webkit-flex;
+    display : flex;
+    justify-content : space-around;
+    text-align : center;
+}
+.block-wrapper .title{ 
+	margin-bottom:20px;
+    font-size:30px;
+}
+.block-wrapper .content{
+	color:#4d80ce;
+	font-size:40px;
 }
 .arrow{
-    height:50px;
-	width:50px;
+    height : 50px;
+	width : 50px;
 }
 .item{
-	padding:20px 50px;
-    border-bottom:1px solid rgb(240,240,240);
-	display: -webkit-flex;
-    display: flex;
-    justify-content: space-between;
-    height:60px;
+	padding : 30px 50px;
+    border-bottom : 1px solid rgb(240,240,240);
+	display : -webkit-flex;
+    display : flex;
+    justify-content : space-between;
+    height : 60px;
 }
 .item-left{
-	display: -webkit-flex;
-    display: flex;
-    align-items: center;
+	display : -webkit-flex;
+    display : flex;
+    align-items : center;
 }
 .item-left img{
-	height:60px;
-	width:60px;
-	padding-right:20px;
+	height : 60px;
+	width : 60px;
+	padding-right : 20px;
 } 
+.item-wrapper{
+	font-size:40px;
+}
 
 /* coupon页面 */
 .coupon-item{
-	display: -webkit-flex;
-    display: flex;
-    justify-content: space-between;
-    padding:25px;
-    margin-bottom:20px;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26), 0 2px 10px 0 rgba(0,0,0,.16);
+	background-color : white;
+	display : -webkit-flex;
+    display : flex;
+    justify-content : space-between;
+    padding : 10px;
+    margin-bottom : 20px;
+    box-shadow : 0 0 10px 0 rgba(155,143,143,0.6);
 }
 .coupon-item img {
-  align-self: flex-end;
+  align-self : flex-end;
 }
 .coupon-item-left{
     display: -webkit-flex;
@@ -94,31 +124,31 @@ html{
     justify-content: space-between;
 }
 .coupon-icon{
-	display: -webkit-flex;
-	display:flex;
-    align-items:center;
-    justify-content:center;
-	height:180px;
-	width:180px;
-	margin-right:20px;
+	display : -webkit-flex;
+	display : flex;
+    align-items : center;
+    justify-content : center;
+	height : 180px;
+	width : 180px;
+	margin-right : 20px;
 }
 .coupon-icon span{
-	font-size:60px;
-	color:white;
-	font-weight:bold;
+	font-size : 60px;
+	color : white;
+	font-weight : bold;
 }
 .smallcoupon{
-	height:100px;
-	width:100px;
+	height : 70px;
+	width : 70px;
 }
 .coupon-wrapper{
-	padding:50px;
+	padding : 50px;
 }
 .coupon-name :first-child{
-	font-size:50px;
-	color:black
+	font-size : 50px;
+	color : black
 }
-.coupon-name:nth-child(2){
+.coupon-name :nth-child(2){
 	font-size:30px;
 	color:#666;
 }
@@ -131,4 +161,134 @@ html{
 }
 .coupon-points .coupon-icon{
     background:#008000;
+}
+.coupon-goods .coupon-icon{
+	background:#e98f36
+}
+
+/* coupon_details页面 */
+.coupon-deatils-wrapper{
+	border-radius:8px;
+    background:white;
+    width:100%;
+    height:auto;	
+}
+.coupon-deatils-title{
+	padding:100px;	
+	text-align:center;
+}
+.coupon-deatils-title :first-child{
+	font-size:30px;
+}
+.coupon-deatils-title :nth-child(2){
+	font-size:70px;
+	padding:20px 0;
+}
+.coupon-deatils-title :last-child{
+	font-size:30px;
+}
+.btn{
+	background:#4d80ce;
+	padding:15px 70px;
+	font-size:40px;
+	color:white;
+	margin-top:50px;
+	border-radius:6px;
+}
+.main-wrapper header{
+    background:rgba(239, 237, 237, 0.94);
+    padding:30px;
+    color:#666;
+}
+.coupon-deatils-content{
+	font-size:35px;
+	color:#666;
+	padding:0px 60px 200px 60px;
+}
+.coupon-deatils-content h5{
+	padding:20px 0;
+}
+.coupon-deatils-content .description{
+	display : -webkit-flex;
+    display : flex;
+    margin-bottom:50px;
+}
+.coupon-deatils-content .description :first-child{
+    width:300px;
+    color:black;
+    align-self: flex-start;	
+}
+.coupon-deatils-content .deadline{
+	display: -webkit-flex;
+    display: flex;
+}
+.coupon-deatils-content .deadline :first-child{
+    width: 200px;	
+    color: black;
+}
+
+/* vip_history页面 */
+.points-wrapper{
+	padding: 50px;
+	width: 100%;
+	background: #d43f3a;
+	color: white;
+}
+.points-now{
+	font-size: 140px;
+	font-weight: 400;
+	text-align: center;
+	margin: 60px;
+}
+.points-title{
+	font-size: 40px;
+}
+.points-history{
+	font-size: 40px;
+}
+.points-item{
+	width: 100%;
+	display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 1px solid #dfdfdf;
+}
+.points-for{
+	padding-bottom: 20px;
+}
+.count-time{
+	font-size: 30px;
+	color: #666;
+}
+.points-cut{
+	color: red;
+}
+.points-add{
+	color: green;
+}
+.points-history-title{
+	padding: 20px 30px;
+	background: rgba(239, 237, 237, 0.94);
+	width: 100%;
+}
+
+/* vip_level页面 */
+.level-wrapper{
+	text-align: center;
+}
+.logo{
+	background: rgba(241, 241, 241, 0.44);
+	padding:20px;
+}
+.totalpoints-wrapper .title{
+	font-size:40px;
+	padding:100px 0 30px 0;
+}
+.totalpoints{padding:0 0 30px 0;}
+#totalpoints{
+	font-size:70px;
+}
+.totalpoints-wrapper .level{
+	font-size:40px;
 }
