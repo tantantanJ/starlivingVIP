@@ -26,6 +26,19 @@ body{
 	width : 100%;
     background : #f5f5f5;
 }
+.cell{
+	display : -webkit-flex;
+    display : flex;
+    margin-bottom:50px;
+}
+.cell :first-child{
+    color:black;
+    width: 25%;
+}
+.cell :last-child{
+    color:black;
+    width: 70%;
+}
 
 /* index“≥√Ê */
 .card-wrapper{
@@ -152,7 +165,7 @@ body{
 	font-size:30px;
 	color:#666;
 }
-.coupon-name :last-child{
+.coupon-name :nth-child(3){
 	font-size:40px;
 	color:#cf0000;
 }
@@ -205,27 +218,7 @@ body{
 	color:#666;
 	padding:0px 60px 200px 60px;
 }
-.coupon-deatils-content h5{
-	padding:20px 0;
-}
-.coupon-deatils-content .description{
-	display : -webkit-flex;
-    display : flex;
-    margin-bottom:50px;
-}
-.coupon-deatils-content .description :first-child{
-    width:300px;
-    color:black;
-    align-self: flex-start;	
-}
-.coupon-deatils-content .deadline{
-	display: -webkit-flex;
-    display: flex;
-}
-.coupon-deatils-content .deadline :first-child{
-    width: 200px;	
-    color: black;
-}
+
 
 /* vip_history“≥√Ê */
 .points-wrapper{
@@ -235,14 +228,20 @@ body{
 	color: white;
 }
 .points-now{
-	font-size: 140px;
-	font-weight: 400;
 	text-align: center;
 	margin: 60px;
+}
+#points-now{
+    font-size: 140px;
+	font-weight: 400;
+}
+.points-now :nth-child(2){
+	font-size: 40px;
 }
 .points-title{
 	font-size: 40px;
 }
+
 .points-history{
 	font-size: 40px;
 }
@@ -276,19 +275,37 @@ body{
 /* vip_level“≥√Ê */
 .level-wrapper{
 	text-align: center;
+	padding-bottom: 100px;
 }
 .logo{
 	background: rgba(241, 241, 241, 0.44);
 	padding:20px;
 }
 .totalpoints-wrapper .title{
-	font-size:40px;
+	font-size: 40px;
 	padding:100px 0 30px 0;
 }
-.totalpoints{padding:0 0 30px 0;}
+.totalpoints{
+	padding:50px 0 50px 0;
+}
+.totalpoints :last-child{
+	font-size: 20px;
+	color: #666;
+}
 #totalpoints{
-	font-size:70px;
+	font-size:90px;
+	font-weight: 600;
+	color: #cf0000;
+	padding: 0 10px 0 30px;
 }
 .totalpoints-wrapper .level{
 	font-size:40px;
+	color: #666;
+}
+.vip-deatils-content{
+	font-size: 35px;
+	padding: 120px 60px;
+}
+.leveldetails-wrapper header{
+	padding-left: 60px;
 }
